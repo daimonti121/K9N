@@ -32,6 +32,18 @@
             display: none
         .header__menu
             display: none
+        .header__mobile
+            display: block
+            position: relative
+            z-index: 20
+            &__mobile-inner
+            .mobile-menu
+                display: flex
+                align-items: center
+                justify-content: space-between
+                &__logo
+                    padding: 8px 0 8px 13px
+
 @media ( max-width: 768px )
     .header
         .container--max-width 
