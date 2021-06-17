@@ -1,5 +1,9 @@
 @import "_mixins" 
 
+.body
+    transition: .5s
+.body.active
+    background: rgba(0, 0, 0, 0.396)
 .header        
     background: url("/src/img/header-top--background.png"), #fff
     .top-header
@@ -130,7 +134,72 @@
 
     .header__mobile
         display: none
-            
+        .header__mobile-inner
+            .mobile-menu
+                position: relative                   
+                &__contact
+                    position: absolute
+                    right: 70px
+                &__btn
+                    background-color: #686868
+                    width: 60px
+                    height: 46px
+                    position: relative
+                    right: -15px
+                &__btn-span
+                    width: 30px
+                    height: 2px
+                    background-color: #fff
+                    position: absolute
+                    top: 50%
+                    left: 25%
+                    transition: .5s
+                &__btn-span:nth-child(2)                        
+                    top: calc(50% - 7px)
+                &__btn-span:nth-child(3)                        
+                    top: calc(50% + 7px)
+                &__nav
+                    position: fixed
+                    top: 46px
+                    height: 100%
+                    width: calc(100% - 60px)
+                    left: 0px
+                    background: #fff
+                    transform: translate(-100%)
+                    transition: .5s
+                    opacity: 1
+                &__list
+                    padding: 18px
+                    list-style: none
+                &__item
+                    padding: 10px
+                &__link
+                    font-weight: 300
+                    font-size: 18px
+                    line-height: 21px
+                    color: #232323
+                    text-decoration: none
+                &__link--active
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 21px
+                    color: #3E7850                    
+                &__link:hover:focus
+                    color: #3E7850
+                &__btn-span--focus
+                    opacity: 1
+                    background: #fff
+                &__nav.active
+                    transform: translate(0%)
+                   
+                    
+                    
+                
+
+                                
+
+                                        
+                    
 
                 
 
