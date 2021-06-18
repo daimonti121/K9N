@@ -1,9 +1,5 @@
 @import "_mixins" 
 
-.body
-    transition: .5s
-.body.active
-    background: rgba(0, 0, 0, 0.396)
 .header        
     background: url("/src/img/header-top--background.png"), #fff
     .top-header
@@ -81,6 +77,10 @@
                 line-height: 16px
                 text-align: right
                 color: #686868
+                position: relative
+                top: -9px
+                margin-bottom: 5px
+                text-decoration: none
             &__tell
                 font-weight: 500
                 font-size: 24px
@@ -191,6 +191,70 @@
                     background: #fff
                 &__nav.active
                     transform: translate(0%)
+
+.body.active
+    background: rgba(0, 0, 0, 0.396)
+.body
+    transition: .5s
+    .title-info
+        width: 100%
+        height: 560px
+        position: relative
+        background: url('../img/header__slider--background.png')
+        .carousel-inner
+            position: relative
+            .carousel-item__image
+                position: relative
+                left: 660px
+                margin-top: 50px
+                width: 360px
+                height: 420px
+            .carousel-info
+                text-align: left
+                width: 481px
+                position: relative
+                top: -380px
+                left: 2px
+                &__item
+                    color: $green-color
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 18px
+                    line-height: 28px
+                    color: #3E7850
+                    margin-bottom: 16px
+                &__title
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 40px
+                    line-height: 47px
+                    color: #252525
+                &__item-info
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 18px
+                    line-height: 28px
+                    color: #252525
+                &__link
+                    font-size: 16px
+                    line-height: 19px
+                    color: #0060B8
+                    &::after                        
+                        content: url('../img/arrow-link.png')
+                        width: 5px
+                        height: 5px
+                        position: relative
+                        top: 2px
+                        left: 15px
+
+
+        .carousel-control-next-icon
+            display: none
+        .carousel-control-next-icon
+                
+
+
+
                    
                     
                     

@@ -11,11 +11,32 @@
     .search 
         &__input
             max-width: 400px
+    .body
+        .title-info        
+            .carousel-inner           
+                .carousel-item__image                
+                    left: 538px                    
 @media ( max-width: 1100px )
     .search 
         &__input
             max-width: 300px
 @media ( max-width: 992px )
+    .body
+        .container--max-width 
+            max-width: 992px
+        .title-info                            
+            .carousel-inner 
+                .carousel-info
+                    width: 360px
+                    top: -260px
+                    left: 2px  
+                    .carousel-info__title
+                        font-size: 28px      
+                .carousel-item__image                
+                    left: 405px
+                    top: 36px   
+                    width: 228px
+                    height: 265px
     .header        
         .container--max-width 
             max-width: 992px
@@ -37,21 +58,97 @@
             position: relative
             z-index: 20
             &__mobile-inner
+                position: fixed
+                z-index: 20
+                display: block
             .mobile-menu
                 display: flex
                 align-items: center
                 justify-content: space-between
+                position: fixed
                 &__logo
                     padding: 8px 0 8px 13px
+        .mobile-search            
+            background: #FFFFFF
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05)
+            .mobile-search-inner
+                text-align: center
+            .search
+                &__form
+                    padding: 12px 15px   
+                    display: flex
+                    justify-content: center                                    
+                &__input-mobile
+                    height: 44px
+                    width: 100%
+                    background: #FFFFFF
+                    border: 1px solid #CACACA
+                    box-sizing: border-box
+                    border-radius: 3px 0px 0px 3px
+                    outline:none
+                &__input-mobile[placeholder]
+                    padding-left: 24px
+                &__input-submit
+                    background: #3E7850
+                    border: none
+                    border-radius: 0px 3px 3px 0px
+                    color: #fff
+                    width: 62px
+                    
 
 @media ( max-width: 768px )
     .header
         .container--max-width 
             max-width: 768px
+    .body
+        .container--max-width 
+            max-width: 768px
+        .title-info                            
+            .carousel-inner
+                .carousel-item
+                    &__image
+                        left: 155px
+                        top: 110px
+                .carousel-info 
+                    top: -310px
+                    &__item
+                        font-size: 14px
+                        line-height: 28px 
+                        margin-bottom: 5px
+                    &__title
+                        font-size: 20px
+                        line-height: 23px
+                    &__item-info   
+                        display: none               
+                        
 @media ( max-width: 576px )
     .header
         .container--max-width 
             max-width: 576px
+    .body
+        .container--max-width 
+            max-width: 576px
+        .title-info                            
+            .carousel-inner
+                .carousel-item
+                    &__image
+                        left: 18%
+@media ( max-width: 420px )
+    .body        
+        .title-info                            
+            .carousel-inner
+                .carousel-item
+                    &__image
+                        left: 18%
+                        top: 120px
+                .carousel-info 
+                    top: -310px                  
+                    &__title
+                        font-size: 25px
+                        width: 358px
+         
+                              
+                   
     
 // @media ( max-width: 576px )
 //     .container--max-width 
