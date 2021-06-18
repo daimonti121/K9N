@@ -1,3 +1,8 @@
+@media ( max-width: 1920px )
+    .body
+        .carousel-indicators
+            bottom: 211px
+
 @media ( max-width: 1350px )
     .header
         .top-header
@@ -5,6 +10,9 @@
                 margin-left: 30px
             .contact
                 margin-right: 30px
+    .body
+        .carousel-indicators
+            bottom: 211px
 @media ( max-width: 1200px )
     .container--max-width 
         max-width: 1200px      
@@ -15,7 +23,10 @@
         .title-info        
             .carousel-inner           
                 .carousel-item__image                
-                    left: 538px                    
+                    left: 538px    
+        .carousel-indicators
+            bottom: 207px
+                         
 @media ( max-width: 1100px )
     .search 
         &__input
@@ -37,6 +48,8 @@
                     top: 36px   
                     width: 228px
                     height: 265px
+        .carousel-indicators
+            bottom: 80px
     .header        
         .container--max-width 
             max-width: 992px
@@ -57,18 +70,18 @@
             display: block
             position: relative
             z-index: 20
-            &__mobile-inner
-                position: fixed
-                z-index: 20
+            &__mobile-inner                
+                z-index: 30
                 display: block
             .mobile-menu
                 display: flex
                 align-items: center
                 justify-content: space-between
-                position: fixed
+                
                 &__logo
                     padding: 8px 0 8px 13px
-        .mobile-search            
+        .mobile-search    
+            margin-top: 45px        
             background: #FFFFFF
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05)
             .mobile-search-inner
@@ -119,8 +132,21 @@
                         font-size: 20px
                         line-height: 23px
                     &__item-info   
-                        display: none               
-                        
+                        display: none       
+        .carousel-indicators
+                bottom: -80px   
+        .catalog
+            padding-top: 70px
+            .catalog-iner
+                &__title     
+                    font-size: 24px
+                    line-height: 28px                     
+                &__products
+                    margin-top: 54px   
+                &__products-title                
+                    margin-top: 13px
+                    margin-left: 13px
+                    
 @media ( max-width: 576px )
     .header
         .container--max-width 
@@ -139,7 +165,7 @@
             .carousel-inner
                 .carousel-item
                     &__image
-                        left: 18%
+                        left: 16%
                         top: 120px
                 .carousel-info 
                     top: -310px                  
