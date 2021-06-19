@@ -139,7 +139,8 @@
                 position: fixed 
                 width: 100%
                 top: 0px      
-                left: 0px                            
+                left: 0px    
+                z-index: 50                        
                 &__contact
                     position: absolute
                     right: 80px
@@ -162,6 +163,7 @@
                     top: calc(50% + 7px)
                 &__nav
                     position: fixed
+                    z-index: 50
                     top: 46px
                     height: 100%
                     width: calc(100% - 60px)
@@ -192,7 +194,8 @@
                     opacity: 1
                     background: #fff
                 &__nav.active
-                    transform: translate(0%)   
+                    transform: translate(0%)  
+                    z-index: 50 
                 
 
 .body.active
@@ -258,6 +261,7 @@
     .catalog
         padding-top: 64px 
         background: #F7F7F7
+        padding-bottom: 94px
         .catalog-iner
             &__title
                 font-style: normal
@@ -279,16 +283,36 @@
             &__products
                 margin-top: 78px           
             &__products-link
+                position: relative
                 text-decoration: none    
                 cursor: url('../img/cursor.png'), pointer
             &__products-title
+                position: absolute
                 font-size: 20px
                 line-height: 23px
                 color: #232323
                 text-decoration: none
                 margin-top: 20px
-                margin-left: 20px
-                position: relative
+                margin-left: 20px      
+                z-index: 19   
+            &__products-title--before
+                position: absolute
+                font-size: 20px
+                line-height: 23px
+                color: #232323
+                text-decoration: none
+                margin-top: 20px
+                margin-left: 20px      
+                z-index: 19   
+            &__products-title--before::before
+                content: ''
+                position: absolute
+                width: 0px
+                height: 2px
+                background: #3E7850
+                top: 54px   
+                opacity: 0  
+                transition: 1s all 
             &__products-title::before
                 content: ''
                 position: absolute
@@ -306,7 +330,14 @@
                 box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05)
                 border-radius: 6px
                 padding: 0                
-                transition: 1s all                
+                transition: 1s all  
+            &__products-item:hover
+                transform: scale(1.1)
+            &__products-item:hover .catalog-iner__products-title--before
+                color: $green-color
+            &__products-item:hover .catalog-iner__products-title--before::before
+                opacity: 1
+                width: 40px
             &__products-item:hover
                 transform: scale(1.1)                
             &__products-item:hover .catalog-iner__products-title
@@ -314,13 +345,42 @@
             &__products-item:hover .catalog-iner__products-title::before
                 opacity: 1
                 width: 40px
-           
-                
-            
-                
             &__products-img
                 width: 100%
-            
+                margin-top: 100px
+    .advantages        
+        background: url('../img/background-slider.png'), rgba(0,0,0,1)                
+        .advantages-inner
+            .avantages__slider
+                .avantages__slider-responsive
+                    .avantages__slider-block
+                        text-align: center
+                    .avantages__text
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 18px
+                        line-height: 28px                        
+                        color: #fff
+                        width: 232px
+                        margin: 0 auto 106px
+                    .avantages__image
+                        position: relative
+                        margin-bottom: 10px
+                        margin-top: 100px
+                    .avantages__img
+                        position: relative
+                        top: 50%
+                        left: calc( 50% - 50px )
+                .slick-dots li
+                    position: relative
+                    top: -40px                   
+                .slick-dots li.slick-active button:before
+                    color: #fff
+                .slick-dots li button:before
+                    color: #fff
+                .slick-next slick-arrow
+                    display: none
+                                    
 
                                 
                                 

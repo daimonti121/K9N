@@ -16,8 +16,12 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
@@ -180,47 +184,137 @@
                 <div class="catalog-iner__title">Каталог продукции</div>
                 <div class="catalog-iner__products">
                     <div class="row">
-                        <div class="col-6 col-md-3 catalog-iner__products-item">
-                            <a class="catalog-iner__products-link" href="#">
-                                <div class="catalog-iner__products-title">Подшибники</div>
-                                <div class="catalog-iner__products-image">
-                                    <img class="catalog-iner__products-img" src="img/catalog1.png" alt="no-image">
-                                </div>
-                            </a>
+                        <div class="col-6 col-md-3">
+                            <div class="catalog-iner__products-item">
+                                <a class="catalog-iner__products-link" href="#">
+                                    <div class="catalog-iner__products-title">Подшибники</div>
+                                    <div class="catalog-iner__products-image">
+                                        <img class="catalog-iner__products-img" src="img/catalog1.png" alt="no-image">
+                                    </div>
+                                </a>
+                            </div>                            
                         </div>
-                        <div class="col-6 col-md-3 catalog-iner__products-item">
-                            <a class="catalog-iner__products-link" href="#">
-                                <div class="catalog-iner__products-title">Подшибники</div>
-                                <div class="catalog-iner__products-image">
-                                    <img class="catalog-iner__products-img" src="img/catalog2.png" alt="no-image">
-                                </div>
-                            </a>
+                        <div class="col-6 col-md-3">
+                            <div class="catalog-iner__products-item">
+                                <a class="catalog-iner__products-link" href="#">
+                                    <div class="catalog-iner__products-title--before">Ремни приводные</div>
+                                    <div class="catalog-iner__products-image">
+                                        <img class="catalog-iner__products-img" src="img/catalog2.png" alt="no-image">
+                                    </div>
+                                </a>
+                            </div>                            
                         </div>
-                        <div class="col-6 col-md-3 catalog-iner__products-item">
-                            <a class="catalog-iner__products-link" href="#">
-                                <div class="catalog-iner__products-title">Подшибники</div>
-                                <div class="catalog-iner__products-image">
-                                    <img class="catalog-iner__products-img" src="img/catalog3.png" alt="no-image">
-                                </div>
-                            </a>
+                        <div class="col-6 col-md-3 mt-md-0 mt-3">
+                            <div class="catalog-iner__products-item">
+                                <a class="catalog-iner__products-link" href="#">
+                                    <div class="catalog-iner__products-title">Фильтры</div>
+                                    <div class="catalog-iner__products-image">
+                                        <img class="catalog-iner__products-img" src="img/catalog3.png" alt="no-image">
+                                    </div>
+                                </a>
+                            </div>                            
                         </div>
-                        <div class="col-6 col-md-3 catalog-iner__products-item">
-                            <a class="catalog-iner__products-link" href="#">
-                                <div class="catalog-iner__products-title">Подшибники</div>
-                                <div class="catalog-iner__products-image">
-                                    <img class="catalog-iner__products-img" src="img/catalog4.png" alt="no-image">
-                                </div>
-                            </a>
+                        <div class="col-6 col-md-3 mt-md-0 mt-3">
+                            <div class="catalog-iner__products-item">
+                                <a class="catalog-iner__products-link" href="#">
+                                    <div class="catalog-iner__products-title--before">Ручной инструмент</div>
+                                    <div class="catalog-iner__products-image">
+                                        <img class="catalog-iner__products-img" src="img/catalog4.png" alt="no-image">
+                                    </div>
+                                </a>
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="row mt-3 mt-md-4">
+                        <div class="col-6 col-md-3">
+                            <div class="catalog-iner__products-item">
+                                <a class="catalog-iner__products-link" href="#">
+                                    <div class="catalog-iner__products-title--before">Метизная продукция</div>
+                                    <div class="catalog-iner__products-image">
+                                        <img class="catalog-iner__products-img" src="img/catalog5.png" alt="no-image">
+                                    </div>
+                                </a>
+                            </div>                            
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="catalog-iner__products-item">
+                                <a class="catalog-iner__products-link" href="#">
+                                    <div class="catalog-iner__products-title">Оборудование</div>
+                                    <div class="catalog-iner__products-image">
+                                        <img class="catalog-iner__products-img" src="img/catalog6.png" alt="no-image">
+                                    </div>
+                                </a>
+                            </div>                            
+                        </div>
+                        <div class="col-6 col-md-3 mt-md-0 mt-3">
+                            <div class="catalog-iner__products-item">
+                                <a class="catalog-iner__products-link" href="#">
+                                    <div class="catalog-iner__products-title--before">Технические жидкости</div>
+                                    <div class="catalog-iner__products-image">
+                                        <img class="catalog-iner__products-img" src="img/catalog7.png" alt="no-image">
+                                    </div>
+                                </a>
+                            </div>                            
+                        </div>
+                        <div class="col-6 col-md-3 mt-md-0 mt-3">
+                            <div class="catalog-iner__products-item">
+                                <a class="catalog-iner__products-link" href="#">
+                                    <div class="catalog-iner__products-title">Паронит</div>
+                                    <div class="catalog-iner__products-image">
+                                        <img class="catalog-iner__products-img" src="img/catalog8.png" alt="no-image">
+                                    </div>
+                                </a>
+                            </div>                            
                         </div>                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-
-
-
+    <div class="advantages">
+        <div class="container--max-width">
+            <div class="advantages-inner">
+                <div class="avantages__slider">
+                    <div class="avantages__slider-responsive">
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo1.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Только оригинальный <br> и сертифицированный <br>товар</div>
+                        </div> 
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo2.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Официальная гарантия 
+                                на обслуживание любого инструмента</div>
+                        </div> 
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo3.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Возможность заказа инструмента у завода изготовителя</div>
+                        </div> 
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo4.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Большие запасы товара 
+                                в розничном магазине 
+                                и на складе в Москве</div>
+                        </div> 
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo5.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Доставка до любой транспортной компании 
+                                в Москве бесплатно </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
     <script>
         let menuBtn = document.querySelector('.mobile-menu__btn');        
         let menu = document.querySelector('.mobile-menu__nav');
@@ -232,9 +326,49 @@
             body.classList.toggle('active');       
         })
        
-    </script>
+    </script>     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>  
+    <script type="text/javascript">
+        $('.avantages__slider-responsive').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1174,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 730,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+      </script>
 </body>
 </html>
