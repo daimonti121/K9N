@@ -209,6 +209,7 @@
         height: 560px
         position: relative
         background: url('../img/header__slider--background.png')
+        transition: .5s
         .carousel-control-next-icon
             display: none
         .carousel-control-next-icon
@@ -257,11 +258,12 @@
                         height: 5px
                         position: relative
                         top: 2px
-                        left: 15px
+                        left: 15px                                    
     .catalog
         padding-top: 64px 
         background: #F7F7F7
         padding-bottom: 94px
+        transition: .5s
         .catalog-iner
             &__title
                 font-style: normal
@@ -347,9 +349,9 @@
                 width: 40px
             &__products-img
                 width: 100%
-                margin-top: 100px
+                margin-top: 100px       
     .advantages        
-        background: url('../img/background-slider.png'), rgba(0,0,0,1)                
+        background: url('../img/background-slider.png'), rgba(0,0,0,1) 
         .advantages-inner
             .avantages__slider
                 .avantages__slider-responsive
@@ -377,9 +379,172 @@
                 .slick-dots li.slick-active button:before
                     color: #fff
                 .slick-dots li button:before
-                    color: #fff
-                .slick-next slick-arrow
+                    color: #fff               
+                .slick-arrow
+                    display: none !important    
+                .slick-dots li.slick-active button:before
                     display: none
+    .feedback 
+        background: #F7F7F7
+        margin-top: -30px
+        transition: .5s 
+        .feedback-inner
+            padding: 94px 0px  
+        .feedback__info
+        &__info-title    
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 42px
+            color: #252525
+            position: relative
+            margin-bottom: 60px
+            &::before
+                content: ""
+                position: absolute
+                top: 50px
+                background: #3E7850
+                width: 84px
+                height: 4px
+        &__info-text
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 23px
+            color: #232323
+            margin-bottom: 8px
+        &__info-details
+            font-size: 18px
+            line-height: 21px
+            color: #232323
+            margin-bottom: 28px
+        &__backinfo
+            &__form
+            &__form-group
+                position: relative
+        &__label
+            font-size: 16px
+            line-height: 19px
+            color: #B4B4B4
+            position: absolute
+            background: #F7F7F7
+            padding: 0px 10px
+            top: -10px
+            left: 30px
+        &__input-control
+            height: 48px
+            border: 1px solid #CACACA            
+            border-radius: 3px
+            background: #F7F7F7            
+            box-shadow: none
+            margin-bottom: 28px
+            color: #B4B4B4
+        &__input-control[placeholder]            
+            padding-left: 18px
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px     
+        &__input-control::placeholder  
+            color: #B4B4B4     
+        &__input-control:focus
+            border: 1px solid #0060B8  
+        &__input-textarea  
+            height: 208px   
+            border: 1px solid #CACACA            
+            border-radius: 3px
+            background: #F7F7F7            
+            box-shadow: none
+            margin-bottom: 28px
+            color: #B4B4B4 
+        &__input-textarea[placeholder]  
+            padding-top: 12px                  
+            padding-left: 18px
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px            
+        &__input-textarea::placeholder                
+            color: #B4B4B4   
+        &__input-textarea:focus
+            border: 1px solid #0060B8     
+        .form-check--margin 
+            margin-left: 34px     
+        input[type=checkbox], input[type=radio]
+            width: 16px
+            height: 16px
+        .form-check-label
+            margin-left: 6px
+            margin-top: 2px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #202020
+        &__button-submit
+            background: #3E7850
+            border-radius: 3px
+        &__button-span
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            text-align: center
+            color: #FFFFFF
+            padding: 12px 34px
+        &__button-submit:focus            
+            background: #326943
+        &__button-submit-col
+            margin-left: -10px
+    .footer
+        background: #252525 
+        .container--max-width 
+            max-width: 1442px 
+            margin: 0 auto
+        .footer-inner       
+            &__nav
+                display: flex
+                padding: 45px 0px
+                align-items: center
+                position: relative
+            &__logo
+                margin-left: 50px
+            &__menu
+                margin-left: 72px
+            &__ul
+                display: flex    
+            &__li
+                padding-top: 15px 
+                margin-left: 50px
+                list-style-type: none
+            &__li:first-child
+                margin-left: 0
+            &__link
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px               
+                color: #FFFFFF
+                text-decoration: none
+            &__info
+                position: absolute
+                right: 0px
+                margin-right: 50px
+                padding-top: 7px
+            &__text
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #FFFFFF 
+
+            
+
+                      
+
+
+
+
                                     
 
                                 

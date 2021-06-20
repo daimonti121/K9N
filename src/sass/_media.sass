@@ -26,7 +26,21 @@
                     left: 538px    
         .carousel-indicators
             bottom: 207px
-                         
+        .feedback
+            .form-check--margin 
+                margin-left: 14px
+            &__button-submit-col
+                margin-left: -28px
+        .footer
+            .container--max-width 
+                max-width: 1200px
+@media ( max-width: 1150px )
+    .body
+        .advantages        
+            .advantages-inner
+                .avantages__slider
+                    .slick-dots li.slick-active button:before
+                        display: initial
 @media ( max-width: 1100px )
     .search 
         &__input
@@ -55,7 +69,21 @@
                 &__products-title
                     font-size: 18px
                 &__products-img                    
-                    margin-top: 60px
+                    margin-top: 60px        
+        .feedback
+            .form-check--margin 
+                margin-left: 14px
+            &__button-submit-col
+                margin-left: -3px
+                margin-top: 15px 
+        .footer
+            .container--max-width 
+                max-width: 992px 
+                .footer-inner
+                    &__menu
+                        margin-left: 0px
+                    &__li 
+                        margin-left: 10px
     .header        
         .container--max-width 
             max-width: 992px
@@ -66,6 +94,7 @@
                 margin-right: 20px
                 &__tell
                     font-size: 19px
+    
 @media ( max-width: 900px )
     .header   
         .top-header
@@ -93,7 +122,8 @@
             .mobile-search-inner
                 text-align: center
             .search
-                &__form
+                transition: .5s
+                .search__form
                     padding: 12px 15px   
                     display: flex
                     justify-content: center                                    
@@ -112,9 +142,7 @@
                     border: none
                     border-radius: 0px 3px 3px 0px
                     color: #fff
-                    width: 62px        
-        
-                    
+                    width: 62px     
 
 @media ( max-width: 768px )
     .header
@@ -155,11 +183,56 @@
                     margin-left: 13px
                 &__products-img 
                     margin-top: 50px
-                    
+        .feedback           
+            .feedback-inner
+                padding: 70px 0px  
+                .feedback__info
+                    text-align: center
+                &__info-title                     
+                    margin-bottom: 54px
+                    font-size: 24px
+                    line-height: 28px
+                .feedback__info-title::before
+                        left: calc(50% - 42px)                
+            &__info-details--padding
+                margin-bottom: 60px
+            &__button-submit
+                width: 100%
+        .footer
+            .container--max-width 
+                max-width: 768px
+                .footer-inner       
+                    &__nav
+                        flex-direction: column 
+                    &__logo
+                        margin-top: 18px
+                        margin-left: 0px   
+                    &__ul
+                        display: flex 
+                        flex-direction: column
+                        text-align: center
+                        padding: 0 
+                        margin-top: 28px
+                        margin-bottom: 32px  
+                    &__li
+                        padding-top: 15px 
+                        margin-left: 0px  
+                        margin-bottom: 32px    
+                    &__li:nth-child(3)
+                        margin-bottom: 0                                          
+                    &__info
+                        position: static
+                        right: 0px
+                        margin-right: 0px
+                        padding-top: 0px 
+                    &__text
+                        padding-bottom: 16px              
+                        
+                                        
 @media ( max-width: 576px )
     .header
         .container--max-width 
-            max-width: 576px
+            max-width: 576px    
     .body
         .container--max-width 
             max-width: 576px
@@ -168,6 +241,10 @@
                 .carousel-item
                     &__image
                         left: 18%
+        .footer
+            .container--max-width 
+                max-width: 576px
+    
 @media ( max-width: 420px )
     .body        
         .title-info                            
