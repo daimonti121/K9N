@@ -113,16 +113,19 @@
                 list-style-type: none
                 text-align: left
             &__list-item
-                padding: 19px 25px                
-            
+                padding: 19px             
             &__list-item--active
-                border-bottom: 3px solid $green-color                   
+                border-bottom: 3px solid $green-color   
             &__link
                 text-decoration: none
                 font-weight: 300
                 font-size: 18px
                 line-height: 21px
                 color: #232323
+            &__list--active
+                border-bottom: 3px solid $green-color 
+                font-weight: 500 
+                color: $green-color 
             &__link:hover 
                 color: $green-color  
             &__link--active
@@ -184,10 +187,11 @@
                     color: #232323
                     text-decoration: none
                 &__link--active
+                    text-decoration: none
                     font-weight: 500
                     font-size: 18px
                     line-height: 21px
-                    color: #3E7850                    
+                    color: $green-color                      
                 &__link:hover:focus
                     color: #3E7850
                 &__btn-span--focus
@@ -197,11 +201,6 @@
                     transform: translate(0%)  
                     z-index: 50 
                 
-
-.body.active
-    background: rgba(0, 0, 0, 0.396)
-    position: relative
-    z-index: 30
 .body
     transition: .5s
     .title-info
@@ -537,8 +536,80 @@
                 font-size: 16px
                 line-height: 19px
                 color: #FFFFFF 
-
-            
+    .shop            
+        .wrapper
+            margin-top: 40px
+            &__link            
+                font-size: 16px
+                line-height: 19px
+                color: #252525
+                display: flex            
+                &:before
+                    content: url('../img/wrapper.png') 
+                    margin-left: 10px
+                    position: relative
+                    left: -12px 
+            &__link  pre 
+                display: block 
+                font-size: 16px
+                line-height: 19px
+                color: #252525
+                font-family: Roboto
+                font-style: normal
+                font-weight: normal
+                margin-left: 16px
+            &__link-a            
+                font-size: 16px
+                line-height: 19px
+                color: #252525
+                text-decoration: none
+            &__link-a:hover
+                text-decoration: underline
+        &__title
+            margin-top: 5px
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 42px
+            color: #252525
+            text-align: center
+            &::before
+                background: #3E7850
+                content: ""
+                width: 82px
+                height: 4px
+                display: block
+                position: relative
+                left: calc(50% - 50px)
+                top: 60px
+    .table
+        margin-top: 52px
+        margin-bottom: 90px
+        &__row
+            background: #E5E5E5
+            border: 1px solid #B4B4B4
+            box-sizing: border-box
+            padding-left: 26px
+            font-size: 18px
+            line-height: 21px
+        &__row-td
+            background: #FFFFFF
+            border: 1px solid #B4B4B4
+            box-sizing: border-box
+            font-size: 18px
+            line-height: 21px        
+    .table td, .table th 
+        padding: 10px 124px 10px 26px
+        font-size: 18px
+        line-height: 21px
+        font-style: normal
+        font-weight: normal
+        color: #252525
+    .shop-mobile
+        display: none
+    
+                            
+        
 
                       
 

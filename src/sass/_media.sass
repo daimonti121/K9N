@@ -34,6 +34,8 @@
         .footer
             .container--max-width 
                 max-width: 1200px
+        .table td, .table th 
+            padding: .75rem
 @media ( max-width: 1150px )
     .body
         .advantages        
@@ -134,7 +136,7 @@
                     border: 1px solid #CACACA
                     box-sizing: border-box
                     border-radius: 3px 0px 0px 3px
-                    outline:none
+                    outline: none
                 &__input-mobile[placeholder]
                     padding-left: 24px
                 &__input-submit
@@ -167,7 +169,8 @@
                         font-size: 20px
                         line-height: 23px
                     &__item-info   
-                        display: none       
+                        display: none    
+           
         .carousel-indicators
                 bottom: -80px   
         .catalog
@@ -226,7 +229,37 @@
                         margin-right: 0px
                         padding-top: 0px 
                     &__text
-                        padding-bottom: 16px              
+                        padding-bottom: 16px 
+        .shop  
+            .wrapper
+                display: none  
+            &__title
+                margin-top: 35px 
+                font-size: 30px
+            .table 
+                display: none
+            &-mobile
+                display: block
+                margin-top: 60px
+                margin-bottom: 60px
+                .mobile-table
+                    width: 100%
+                    border: 1px solid #B4B4B4
+                .mobile-table th, .mobile-table th
+                    width: 50% 
+                .mobile-table th
+                    padding-left: 9px
+                    padding-top: 10px
+                    padding-bottom: 8px
+                .mobile-table td
+                    padding-left: 9px
+                    padding-top: 10px
+                    padding-bottom: 8px
+                .mobile-table--gray-color
+                    background: #E5E5E5
+                .mobile-table_block--border
+                    border-bottom: 1px solid #B4B4B4
+
                         
                                         
 @media ( max-width: 576px )
