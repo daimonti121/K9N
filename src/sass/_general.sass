@@ -382,11 +382,29 @@
                 .slick-arrow
                     display: none !important    
                 .slick-dots li.slick-active button:before
-                    display: none
+                    display: none    
     .feedback 
-        background: #F7F7F7
+        background: #fff
         margin-top: -30px
         transition: .5s 
+        .feedback__title-contact
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 42px
+            color: #252525   
+            text-align: center
+            margin-top: 84px
+            position: relative
+            &::before
+                content: ""
+                display: block
+                width: 82px
+                height: 4px
+                background: #3E7850
+                position: absolute
+                left: calc( 50% - 45px )
+                top: 50px
         .feedback-inner
             padding: 94px 0px  
         .feedback__info
@@ -426,7 +444,7 @@
             line-height: 19px
             color: #B4B4B4
             position: absolute
-            background: #F7F7F7
+            background: #fff
             padding: 0px 10px
             top: -10px
             left: 30px
@@ -434,7 +452,7 @@
             height: 48px
             border: 1px solid #CACACA            
             border-radius: 3px
-            background: #F7F7F7            
+            background: #fff       
             box-shadow: none
             margin-bottom: 28px
             color: #B4B4B4
@@ -453,7 +471,7 @@
             height: 208px   
             border: 1px solid #CACACA            
             border-radius: 3px
-            background: #F7F7F7            
+            background: #fff           
             box-shadow: none
             margin-bottom: 28px
             color: #B4B4B4 
@@ -497,6 +515,67 @@
             background: #326943
         &__button-submit-col
             margin-left: -10px
+    .map 
+        padding: 0 
+        margin: 0 0 -7px   
+        width: 100%   
+        &__google
+            width: 100%
+            height: 636px
+    
+    .feedback--margin
+        margin-top: 1px
+        background: #FFFFFF    
+    .product
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 42px
+            color: #252525
+            margin-top: 15px
+        &__item
+            margin-top: 22px
+        &__image             
+            max-width: 430px  
+            margin-left: 1px          
+        &__image img 
+            border: 1px solid #E5E5E5
+            padding: 23px 82px 26px 82px
+        &__text-title
+            font-weight: bold
+            font-size: 28px
+            line-height: 33px
+            color: #252525
+            margin-top: -5px
+            margin-bottom: 10px
+        &__details
+            font-weight: 500
+            font-size: 18px
+            line-height: 21px 
+            color: #3E7850
+            margin-bottom: 12px
+        &__description
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            color: #232323
+        &__info
+            margin-top: 30px
+        &__info-title
+            font-weight: bold
+            font-size: 28px
+            line-height: 33px
+            color: #252525
+        &__info-text
+            margin-top: 16px
+            font-size: 18px
+            line-height: 21px
+            color: #252525
+
+
+        
     .footer
         background: #252525 
         .container--max-width 
